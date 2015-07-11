@@ -224,3 +224,18 @@ BOARD_RIL_CLASS := ../../../device/asus/Z008/ril
 
 # Recipes to generate prebuilts
 -include device/intel/common/external/external.mk
+
+# TWRP
+TW_THEME := portrait_hdpi
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INCLUDE_CRYPTO := true
+# We don't currently have SuperSU binaries for x86, need to correct this at some point
+TW_EXCLUDE_SUPERSU := true
+TW_NO_USB_STORAGE := true
+# Our parted binary is armv7 only so disable partitioning since it won't work anyway
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_NTFS_3G := true
+# Fix slow wiping
+BOARD_SUPPRESS_EMMC_WIPE := true
