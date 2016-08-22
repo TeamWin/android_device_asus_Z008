@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_zenfone2-userdebug
-add_lunch_combo cm_zenfone2-eng
-add_lunch_combo omni_zenfone2-userdebug
-add_lunch_combo omni_zenfone2-eng
+add_lunch_combo cm_Z008-userdebug
+add_lunch_combo cm_Z008-eng
+add_lunch_combo omni_Z008-userdebug
+add_lunch_combo omni_Z008-eng
