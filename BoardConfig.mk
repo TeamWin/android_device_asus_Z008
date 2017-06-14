@@ -68,6 +68,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/Z008/mkbootimg.mk
 BOARD_BOOT_KEY := device/asus/Z008/keys/boot_z008.sig
 BOARD_RECOVERY_KEY := device/asus/Z008/keys/recovery_z008.sig
+LZMA_RAMDISK_TARGETS := recovery
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
